@@ -17,7 +17,7 @@ library(utils)
 library(dplyr)
 library(curl)
 
-setwd("~/Books")
+setwd("~/Books") # Set as wanted
 
 books <- read.csv("Free+English+textbooks.csv",sep=';')
 
