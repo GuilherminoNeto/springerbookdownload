@@ -2,7 +2,7 @@
 # R Code for Downloading Springer Texbooks
 ###########################################
 # Author: Guilhermino Neto, G. (guilherme.neto@ifes.edu.br)
-# v 1.0
+# v 1.1
 # Last update: 04.29.2020
 
 ##############
@@ -47,6 +47,8 @@ curls <- paste(curls,'.pdf',sep='')
 for(i in levels(genre)) {
   dir.create(i)  
 }
+
+dir.create('Computer Science/Systems Programming in Unix') # only subfolder
 
 genre <- as.character(genre)
 
