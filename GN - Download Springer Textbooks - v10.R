@@ -25,7 +25,7 @@ books <- read.csv("Free+English+textbooks.csv",sep=';')
 # Download
 ############
 
-titles <- as.character(books$ï..Book.Title)
+titles <- as.character(books$Ã¯..Book.Title)
 genre  <- books$English.Package.Name
 urls   <- as.character(books$OpenURL)
 
@@ -52,5 +52,5 @@ genre <- as.character(genre)
 
 # Download
 for (i in 1:nrow(books)) {
-  download.file(curls[i], destfile = paste(genre[i],'/',titles[i],sep=''),mode="wb")
+  download.file(curls[i], destfile = paste(genre[i],'/',titles[i],'.pdf',sep=''),mode='wb')
 }
